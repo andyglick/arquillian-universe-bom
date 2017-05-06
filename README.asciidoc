@@ -15,7 +15,7 @@ Include the following snippet in your POM xml file:
 [source, xml]
 ----
 <properties>
-    <version.arquillian_universe>1.0.0.Alpha1</version.arquillian_universe>
+    <version.arquillian_universe>1.1.13.3</version.arquillian_universe>
 </properties>
 
 <dependencyManagement>
@@ -697,6 +697,34 @@ Documentation: https://github.com/arquillian/arquillian-cube
 </dependency>
 ----
 
+==== Arquillian Cube Docker REST Assured
+
+Arquillian Cube is an Arquillian extension that can be used to manager Docker containers from Arquillian and can be integrated with REST Assured
+
+Documentation: http://arquillian.org/arquillian-cube/#_rest_assured_integration
+
+[source, xml]
+----
+<dependency>
+    <groupId>org.arquillian.universe</groupId>
+    <artifactId>arquillian-cube-docker-restassured</artifactId>
+    <scope>test</scope>
+    <type>pom</type>
+</dependency>
+----
+
+===== Additional required dependencies
+
+[source, xml]
+----
+<dependency>
+    <groupId>io.rest-assured</groupId>
+    <artifactId>rest-assured</artifactId>
+    <version>3.0.2</version>
+    <scope>test</scope>
+</dependency>
+----
+
 ==== Arquillian Cube OpenShift
 
 Arquillian Cube is an Arquillian extension that can be used to manager Docker containers from Arquillian.
@@ -756,7 +784,7 @@ It integrates with Pumba for container chaos.
 Documentation: https://github.com/arquillian/arquillian-cube-q#container-chaos
 Repository: https://github.com/arquillian/arquillian-cube-q
 
-[source, java]
+[source, xml]
 ----
 <dependency>
     <groupId>org.arquillian.universe</groupId>
@@ -775,7 +803,7 @@ It integrates with SimianArmy for operative system chaos.
 Documentation: https://github.com/arquillian/arquillian-cube-q#operative-system-chaos
 Repository: https://github.com/arquillian/arquillian-cube-q
 
-[source, java]
+[source, xml]
 ----
 <dependency>
     <groupId>org.arquillian.universe</groupId>
@@ -794,7 +822,7 @@ It integrates with Toxify for network chaos.
 Documentation: https://github.com/arquillian/arquillian-cube-q#network-chaos
 Repository: https://github.com/arquillian/arquillian-cube-q
 
-[source, java]
+[source, xml]
 ----
 <dependency>
     <groupId>org.arquillian.universe</groupId>
@@ -810,7 +838,7 @@ Arquillian Algeron Pact is the integration of all Arquillian philosophy/extensio
 
 Documentation: https://github.com/arquillian/arquillian-algeron#arquillian-algeron-pact-consumer
 
-[source, java]
+[source, xml]
 ----
 <dependency>
     <groupId>org.arquillian.universe</groupId>
@@ -838,7 +866,7 @@ Arquillian Algeron Pact is the integration of all Arquillian philosophy/extensio
 
 Documentation: https://github.com/arquillian/arquillian-algeron#arquillian-algeron-pact-consumer
 
-[source, java]
+[source, xml]
 ----
 <dependency>
     <groupId>org.arquillian.universe</groupId>
@@ -866,7 +894,7 @@ Arquillian Algeron provides an integration to publish generated contracts.
 
 Documentation: https://github.com/arquillian/arquillian-algeron#arquillian-algeron-consumer-publisher
 
-[source, java]
+[source, xml]
 ----
 <dependency>
     <groupId>org.arquillian.universe</groupId>
@@ -880,7 +908,7 @@ Documentation: https://github.com/arquillian/arquillian-algeron#arquillian-alger
 
 Arquillian Algeron provides an integration to publish generated contracts.
 
-[source, java]
+[source, xml]
 ----
 <dependency>
     <groupId>org.arquillian.universe</groupId>
@@ -890,7 +918,7 @@ Arquillian Algeron provides an integration to publish generated contracts.
 </dependency>
 ----
 
-[source, java]
+[source, xml]
 ----
 <dependency>
     <groupId>org.arquillian.universe</groupId>
@@ -900,7 +928,7 @@ Arquillian Algeron provides an integration to publish generated contracts.
 </dependency>
 ----
 
-[source, java]
+[source, xml]
 ----
 <dependency>
     <groupId>org.arquillian.universe</groupId>
@@ -1021,6 +1049,162 @@ Documentation: https://github.com/arquillian/arquillian-container-chameleon
 <dependency>
     <groupId>org.arquillian.universe</groupId>
     <artifactId>arquillian-chameleon</artifactId>
+    <scope>test</scope>
+    <type>pom</type>
+</dependency>
+----
+
+==== Arquillian APE NoSQL MongoDB
+
+[source, xml]
+----
+<dependency>
+    <groupId>org.arquillian.universe</groupId>
+    <artifactId>arquillian-ape-nosql-mongodb</artifactId>
+    <scope>test</scope>
+    <type>pom</type>
+</dependency>
+----
+
+===== Additional required dependencies
+
+[source, xml]
+----
+<dependency>
+    <groupId>org.mongodb</groupId>
+    <artifactId>mongodb-driver</artifactId>
+    <version>3.4.2</version> <!-- Any 3.X should work -->
+    <scope>test</scope>
+</dependency>
+----
+
+==== Arquillian APE NoSQL Redis
+
+[source, xml]
+----
+<dependency>
+    <groupId>org.arquillian.universe</groupId>
+    <artifactId>arquillian-ape-nosql-redis</artifactId>
+    <scope>test</scope>
+    <type>pom</type>
+</dependency>
+----
+
+===== Additional required dependencies
+
+[source, xml]
+----
+<dependency>
+    <groupId>redis.clients</groupId>
+    <artifactId>jedis</artifactId>
+    <scope>test</scope>
+    <version>2.9.0</version>
+</dependency>
+----
+
+==== Arquillian APE NoSQL Couchbase
+
+[source, xml]
+----
+<dependency>
+    <groupId>org.arquillian.universe</groupId>
+    <artifactId>arquillian-ape-nosql-couchbase</artifactId>
+    <scope>test</scope>
+    <type>pom</type>
+</dependency>
+----
+
+===== Additional required dependencies
+
+[source, xml]
+----
+<dependency>
+    <groupId>com.couchbase.client</groupId>
+    <artifactId>java-client</artifactId>
+    <scope>test</scope>
+    <version>2.4.3</version>
+</dependency>
+----
+
+==== Arquillian APE NoSQL Vault
+
+[source, xml]
+----
+<dependency>
+    <groupId>org.arquillian.universe</groupId>
+    <artifactId>arquillian-ape-nosql-vault</artifactId>
+    <scope>test</scope>
+    <type>pom</type>
+</dependency>
+----
+
+===== Additional required dependencies
+
+[source, xml]
+----
+<dependency>
+    <groupId>com.bettercloud</groupId>
+    <artifactId>vault-java-driver</artifactId>
+    <scope>test</scope>
+    <version>2.0.0</version>
+</dependency>
+----
+
+==== Arquillian APE REST Postman
+
+[source, xml]
+----
+<dependency>
+    <groupId>org.arquillian.universe</groupId>
+    <artifactId>arquillian-ape-rest-postman</artifactId>
+    <scope>test</scope>
+    <type>pom</type>
+</dependency>
+----
+
+==== Arquillian APE SQL Container DBUnit
+
+[source, xml]
+----
+<dependency>
+    <groupId>org.arquillian.universe</groupId>
+    <artifactId>arquillian-ape-sql-container-dbunit</artifactId>
+    <scope>test</scope>
+    <type>pom</type>
+</dependency>
+----
+
+==== Arquillian APE SQL Standalone DBUnit
+
+[source, xml]
+----
+<dependency>
+    <groupId>org.arquillian.universe</groupId>
+    <artifactId>arquillian-ape-sql-standalone-dbunit</artifactId>
+    <scope>test</scope>
+    <type>pom</type>
+</dependency>
+----
+
+==== Arquillian APE SQL Standalone Flyway
+
+[source, xml]
+----
+<dependency>
+    <groupId>org.arquillian.universe</groupId>
+    <artifactId>arquillian-ape-sql-standalone-flyway</artifactId>
+    <scope>test</scope>
+    <type>pom</type>
+</dependency>
+----
+
+==== Arquillian JUnit Rule
+
+[source, xml]
+----
+<dependency>
+    <groupId>org.arquillian.universe</groupId>
+    <artifactId>arquillian-ape-junit-rule</artifactId>
     <scope>test</scope>
     <type>pom</type>
 </dependency>
