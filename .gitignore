@@ -18,6 +18,7 @@ atlassian*.xml
 # Maven
 target/
 dependency-reduced-pom.xml
+effective.pom
 *.versionsBackup
 
 # TestNG
