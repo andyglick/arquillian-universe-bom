@@ -9,25 +9,15 @@
 
   <modelVersion>4.0.0</modelVersion>
 
-  <artifactId>arquillian-algeron-pact-broker-retriever</artifactId>
-  <name>Arquillian Algeron Pact Broker Retriever</name>
+  <artifactId>arquillian-rusheye</artifactId>
+  <name>Arquillian Rusheye</name>
   <packaging>pom</packaging>
-
-  <dependencyManagement>
-    <dependencies>
-      <dependency>
-        <groupId>org.arquillian.algeron</groupId>
-        <artifactId>arquillian-algeron-pact-provider-pact-broker-loader</artifactId>
-        <version>${version.arquillian_algeron}</version>
-      </dependency>
-    </dependencies>
-  </dependencyManagement>
 
   <dependencies>
     <dependency>
-      <groupId>org.arquillian.algeron</groupId>
-      <artifactId>arquillian-algeron-pact-provider-pact-broker-loader</artifactId>
+      <groupId>org.arquillian.rusheye</groupId>
+      <artifactId>rusheye-impl</artifactId>
+      <version>${version.rusheye}</version>
     </dependency>
   </dependencies>
-
 </project>

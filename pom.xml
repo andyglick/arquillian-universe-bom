@@ -18,7 +18,7 @@
   <!-- Artifact Information -->
   <groupId>org.arquillian.universe</groupId>
   <artifactId>arquillian-universe-parent</artifactId>
-  <version>1.1.13.5-SNAPSHOT</version>
+  <version>1.1.13.6-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <name>Arquillian Universe Aggregator</name>
@@ -60,36 +60,36 @@
   <properties>
     <maven.version>3.5.0</maven.version>
 
-    <version.arquillian_algeron>1.0.0.Alpha6</version.arquillian_algeron>
-    <version.ape>2.0.0-alpha.2</version.ape>
+    <version.arquillian_algeron>1.0.0</version.arquillian_algeron>
     <version.arquillian_byteman>1.0.0.Alpha4</version.arquillian_byteman>
     <version.arquillian_chameleon>1.0.0.Beta2</version.arquillian_chameleon>
     <version.arquillian_core>1.1.13.Final</version.arquillian_core>
     <version.arquillian_cukes_in_space>1.6.5</version.arquillian_cukes_in_space>
-    <version.arquillian_cube>1.2.0</version.arquillian_cube>
+    <version.arquillian_cube>1.4.0</version.arquillian_cube>
     <version.arquillian_cube_q>1.0.0.Alpha3</version.arquillian_cube_q>
-    <version.arquillian_drone>2.1.0.Beta1</version.arquillian_drone>
+    <version.arquillian_drone>2.1.1</version.arquillian_drone>
     <version.arquillian_governor>1.0.4.Final</version.arquillian_governor>
-    <version.arquillian_graphene>2.2.0</version.arquillian_graphene>
+    <version.arquillian_graphene>2.2.1</version.arquillian_graphene>
     <version.arquillian_jacoco>1.0.0.Alpha9</version.arquillian_jacoco>
     <version.arquillian_persistence>1.0.0.Alpha7</version.arquillian_persistence>
     <version.arquillian_recorder>1.1.6.Final</version.arquillian_recorder>
     <version.arquillian_rest>1.0.0.Alpha4</version.arquillian_rest>
     <version.arquillian_spacelift>1.0.0</version.arquillian_spacelift>
     <version.arquillian_spring>1.1.0.Alpha1</version.arquillian_spring>
-    <version.arquillian_transaction>1.0.4.Final</version.arquillian_transaction>
+    <version.arquillian_transaction>1.0.4</version.arquillian_transaction>
     <version.arquillian_warp>1.0.0.Alpha8</version.arquillian_warp>
 
+    <version.ape>2.0.0-alpha.3</version.ape>
     <version.dbunit>2.5.3</version.dbunit>
     <version.flyway>4.1.2</version.flyway>
     <version.httpcore>4.4.6</version.httpcore>
-    <version.nosqlunit>1.0.0-rc.3</version.nosqlunit>
-    <version.selenium>3.3.1</version.selenium>
+    <version.nosqlunit>1.0.0-rc.5</version.nosqlunit>
+    <version.rusheye>1.0.0</version.rusheye>
+    <version.selenium>3.4.0</version.selenium>
 
     <version.shrinkwrap>1.2.6</version.shrinkwrap>
-    <version.shrinkwrap_descriptors>2.0.0-alpha-10</version.shrinkwrap_descriptors>
-    <version.shrinkwrap_resolvers>3.0.0-alpha-4</version.shrinkwrap_resolvers>
-
+    <version.shrinkwrap_descriptors>2.0.0</version.shrinkwrap_descriptors>
+    <version.shrinkwrap_resolvers>3.0.0-beta-1</version.shrinkwrap_resolvers>
   </properties>
 
   <modules>
@@ -159,6 +159,7 @@
     <module>arquillian-ape-sql-standalone-dbunit</module>
     <module>arquillian-ape-sql-standalone-flyway</module>
     <module>arquillian-ape-junit-rule</module>
+    <module>arquillian-rusheye</module>
     <module>test</module>
   </modules>
 
